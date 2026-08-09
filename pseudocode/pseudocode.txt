@@ -1,225 +1,90 @@
 START
 
-    CREATE Scanner object
+Create Scanner object
+Display CampusTrack heading
 
-    DISPLAY CampusTrack welcome heading
+DO
+    Read student ID
+    Read full name
 
-    // Student Details
-    READ student ID
-
-    CONSUME pending newline
-
-    READ complete student name
-
-    READ age
-
-    WHILE age < 16 OR age > 30
-        DISPLAY "Invalid age. Enter a value between 16 and 30."
-        READ age again
+    Read age
+    WHILE age is outside 15 to 35
+        Display error
+        Read age again
     END WHILE
 
+    Read email
 
-    // Course Selection
-    DISPLAY course menu
+    DO
+        Display course menu
+        Read course choice
+        Use switch to assign course name and base semester fee
+    WHILE course choice is invalid
 
-    READ course choice
+    Read and validate semester
+    Consume pending newline
+    Read complete career goal
 
-    WHILE course choice < 1 OR course choice > 3
-        DISPLAY "Invalid course choice. Enter a value from 1 to 3."
-        READ course choice again
-    END WHILE
+    Read and validate five subject marks separately
+    Calculate total marks
+    Calculate decimal percentage using explicit casting
 
-    SWITCH course choice
+    Check every subject pass condition
+    Check overall academic criteria
+    Determine grade
 
-        CASE 1:
-            SET course name = "BCA"
-            SET semester fee = 30000
+    Read and validate total classes
+    Read and validate attended classes
+    Calculate attendance percentage
+    Use ternary operator to determine attendance status
 
-        CASE 2:
-            SET course name = "B.Sc Computer Science"
-            SET semester fee = 35000
+    Read and validate number of assignment entries
+    Set assignment total and valid count to zero
 
-        CASE 3:
-            SET course name = "B.E/B.Tech"
-            SET semester fee = 50000
+    FOR every requested assignment entry
+        Read assignment score
 
-    END SWITCH
+        IF score is -1
+            Display early-finish message
+            BREAK
+        END IF
 
+        IF score is invalid
+            Display skipped-entry warning
+            CONTINUE
+        END IF
 
-    // Java Marks
-    READ Java marks
+        Add score to assignment total
+        Increase valid-assignment count
+    END FOR
 
-    WHILE Java marks < 0 OR Java marks > 100
-        DISPLAY "Invalid marks. Enter a value between 0 and 100."
-        READ Java marks again
-    END WHILE
-
-
-    // SQL Marks
-    READ SQL marks
-
-    WHILE SQL marks < 0 OR SQL marks > 100
-        DISPLAY "Invalid marks. Enter a value between 0 and 100."
-        READ SQL marks again
-    END WHILE
-
-
-    // Aptitude Marks
-    READ Aptitude marks
-
-    WHILE Aptitude marks < 0 OR Aptitude marks > 100
-        DISPLAY "Invalid marks. Enter a value between 0 and 100."
-        READ Aptitude marks again
-    END WHILE
-
-
-    // Calculate Marks
-    CALCULATE total marks
-        total marks = Java marks + SQL marks + Aptitude marks
-
-    CALCULATE average
-        average = total marks / 3.0
-
-
-    // Academic Result
-    IF Java marks >= 35 AND
-       SQL marks >= 35 AND
-       Aptitude marks >= 35
-
-        SET academic result = "PASSED"
-
+    IF valid-assignment count is greater than zero
+        Calculate decimal assignment average
     ELSE
-
-        SET academic result = "FAILED"
-
+        Set assignment average to zero
     END IF
 
+    Determine assignment criteria and status
+    Determine scholarship percentage
+    Calculate scholarship amount
+    Calculate final payable fee
 
-    // Grade
-    IF academic result = "FAILED"
+    Read and validate amount paid
+    Calculate fee balance
+    Use ternary operator to determine fee status
 
-        SET grade = "F"
+    Check academic, attendance, assignment and fee conditions
+    Use ternary operator to determine final clearance status
 
-    ELSE IF average >= 75
+    Display the complete student report
+    Display every failed condition
+    Display relevant recommendations
 
-        SET grade = "A"
+    Ask whether another student must be processed
+    Validate that the choice is 1 or 0
+WHILE choice is 1
 
-    ELSE IF average >= 60
-
-        SET grade = "B"
-
-    ELSE IF average >= 50
-
-        SET grade = "C"
-
-    ELSE
-
-        SET grade = "D"
-
-    END IF
-
-
-    // Attendance
-    READ attendance percentage
-
-    WHILE attendance < 0 OR attendance > 100
-        DISPLAY "Invalid attendance. Enter a value between 0 and 100."
-        READ attendance again
-    END WHILE
-
-    SET attendance status using ternary operator
-
-        IF attendance >= 75
-            attendance status = "SUFFICIENT"
-        ELSE
-            attendance status = "SHORTAGE"
-
-
-    // Fee Details
-    READ fee paid
-
-    WHILE fee paid < 0 OR fee paid > semester fee
-        DISPLAY "Invalid fee amount."
-        READ fee paid again
-    END WHILE
-
-    CALCULATE fee balance
-
-        fee balance = semester fee - fee paid
-
-    SET fee status using ternary operator
-
-        IF fee balance = 0
-            fee status = "CLEARED"
-        ELSE
-            fee status = "PENDING"
-
-
-    // Final Semester Status
-    IF academic result = "PASSED" AND
-       attendance >= 75 AND
-       fee balance = 0
-
-        SET semester status = "SEMESTER CLEARED"
-
-    ELSE
-
-        SET semester status = "SEMESTER NOT CLEARED"
-
-    END IF
-
-
-    // Display Student Report
-    DISPLAY student ID
-    DISPLAY student name
-    DISPLAY age
-    DISPLAY course
-
-    DISPLAY Javamarks
-    DISPLAY SQLmarks
-    DISPLAY Aptitudemarks
-    DISPLAY totalmarks
-    DISPLAY average
-    DISPLAY academicresult
-    DISPLAY grade
-
-    DISPLAY attendance
-    DISPLAY attendancestatus
-
-    DISPLAY semesterfee
-    DISPLAY feepaid
-    DISPLAY feebalance
-    DISPLAY feestatus
-
-    DISPLAY semesterstatus
-
-
-    // Display Reasons
-    IF semester status = "SEMESTER NOT CLEARED"
-
-        DISPLAY "Reasons:"
-
-        IF Java marks < 35
-            DISPLAY "- Java marks are below 35."
-        END IF
-
-        IF SQL marks < 35
-            DISPLAY "- SQL marks are below 35."
-        END IF
-
-        IF Aptitude marks < 35
-            DISPLAY "- Aptitude marks are below 35."
-        END IF
-
-        IF attendance < 75
-            DISPLAY "- Attendance is below 75%."
-        END IF
-
-        IF fee balance > 0
-            DISPLAY "- Semester fee is pending."
-        END IF
-
-    END IF
-
+Display closing message
+Close Scanner
 
 STOP
