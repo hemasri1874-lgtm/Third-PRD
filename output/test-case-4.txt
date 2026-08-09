@@ -1,59 +1,214 @@
-==================================================
-			        CAMPUSTRACK		              
-==================================================
-	Simple Student Result Management System	      
---------------------------------------------------
+========================================================
+                    CAMPUSTRACK
+========================================================
+       Student Academic Management System
+--------------------------------------------------------
+3. B.E/B. Tech
+4. MCA
+5. Other
+Enter course choice: 
+2
+Course selected: B.Sc Computer Science
+Enter semester (1-8): 
+4
+Enter career goal: 
+Become a Python developer
+Enter Java marks: 
+90
+Enter SQL marks: 
+90
+Enter Web Technology marks: 
+90
+Enter Aptitude marks: 
+30
+Enter Communication marks: 
+90
+Enter total classes conducted: 
+120
+Enter classes attended: 
+90
+How many assignment scores do you want to enter (1-10): 
+4
+Enter score for assignment 1 (0-10, -1 to finish): 
+9
+Assignment score accepted.
+Enter score for assignment 2 (0-10, -1 to finish): 
+8
+Assignment score accepted.
+Enter score for assignment 3 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Enter score for assignment 4 (0-10, -1 to finish): 
+8
+Assignment score accepted.
+Final payable fee: 30000.00
+Enter fee paid: 
+6
+
+========================================================
+                 STUDENT SEMESTER REPORT
+========================================================
+Student ID                 : STU102
+Student Name               : Ravi
+Age                        : 20
+Email                      : ravi@gmail.com
+Course                     : B.Sc Computer Science
+Semester                   : 4
+Career Goal                : Become a Python developer
+
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 90
+SQL Marks                  : 90
+Web Technology Marks       : 90
+Aptitude Marks             : 30
+Communication Marks        : 90
+Total Marks                : 390/500
+Percentage                 : 78.00%
+Academic Result            : FAILED
+Grade                      : F
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 120
+Classes Attended           : 90
+Attendance Percentage      : 75.00%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 4
+Assignment Total           : 32
+Assignment Average         : 8.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 30000.00
+Scholarship Percentage     : 0%
+Scholarship Amount         : 0.00
+Final Payable Fee          : 30000.00
+Fee Paid                   : 6.00
+Fee Balance                : 29994.00
+Fee Status                 : PENDING
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
+- Aptitude marks are below 35.
+- Semester fee is pending.
+
+---------------- RECOMMENDATIONS ---------------------
+- Revisit the failed subject and complete additional practice.
+========================================================
+                    CAMPUSTRACK
+========================================================
+       Student Academic Management System
+--------------------------------------------------------
 Enter student ID: 
 STU104
 Enter student name: 
 Teena
 Enter age: 
-21
+20
+Age accepted.
+Enter email: 
+teena@gmail.com
 
 Select Course
 1. BCA
 2. B.Sc Computer Science
 3. B.E/B. Tech
+4. MCA
+5. Other
 Enter course choice: 
 1
 Course selected: BCA
+Enter semester (1-8): 
+4
+Enter career goal: 
+Become a programmer
 Enter Java marks: 
-70
+76
 Enter SQL marks: 
-68
+75
+Enter Web Technology marks: 
+75
 Enter Aptitude marks: 
-72
-Enter attendance percentage: 
+75
+Enter Communication marks: 
+80
+Enter total classes conducted: 
+100
+Enter classes attended: 
 70
+How many assignment scores do you want to enter (1-10): 
+4
+Enter score for assignment 1 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Enter score for assignment 2 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Enter score for assignment 3 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Enter score for assignment 4 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Final payable fee: 35000.00
 Enter fee paid: 
 20000
 
-==================================================
-              STUDENT SEMESTER REPORT             
-==================================================
-Student ID          : STU104
-Student Name        : Teena
-Age                 : 21
-Course              : BCA
---------------- ACADEMIC DETAILS -----------------
-Java Marks          : 70
-SQL Marks           : 68
-Aptitude Marks      : 72
-Total Marks         : 210/ 300
-Average             : 70.00
-Academic Result     : PASSED
-Grade               : B
---------------- ATTENDANCE DETAILS ---------------
-Attendance          : 70.00%
-Attendance Status   : SHORTAGE
------------------- FEE DETAILS --------------------
-Semester Fee        : 30000.0
-Fee paid            : 20000.0
-Fee Balance         : 10000.0
-Fee Status          : PENDING
----------------- FINAL STATUS ---------------------
-Semester Status     : SEMESTER NOT CLEARED
+========================================================
+                 STUDENT SEMESTER REPORT
+========================================================
+Student ID                 : STU104
+Student Name               : Teena
+Age                        : 20
+Email                      : teena@gmail.com
+Course                     : BCA
+Semester                   : 4
+Career Goal                : Become a programmer
 
-Reasons:
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 76
+SQL Marks                  : 75
+Web Technology Marks       : 75
+Aptitude Marks             : 75
+Communication Marks        : 80
+Total Marks                : 381/500
+Percentage                 : 76.20%
+Academic Result            : PASSED
+Grade                      : A
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 100
+Classes Attended           : 70
+Attendance Percentage      : 70.00%
+Attendance Status          : SHORTAGE
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 4
+Assignment Total           : 28
+Assignment Average         : 7.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 35000.00
+Scholarship Percentage     : 0%
+Scholarship Amount         : 0.00
+Final Payable Fee          : 35000.00
+Fee Paid                   : 20000.00
+Fee Balance                : 15000.00
+Fee Status                 : PENDING
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
 - Attendance is below 75%.
 - Semester fee is pending.
+
+---------------- RECOMMENDATIONS ---------------------
+- Attend classes regularly and clear the attendance shortage.
+- Pay the pending semester fee before clearance.
+========================================================
+

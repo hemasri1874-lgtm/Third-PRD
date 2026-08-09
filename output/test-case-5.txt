@@ -1,70 +1,115 @@
-==================================================
-			        CAMPUSTRACK		              
-==================================================
-	Simple Student Result Management System	      
---------------------------------------------------
+=======================================================
+                    CAMPUSTRACK
+========================================================
+       Student Academic Management System
+--------------------------------------------------------
 Enter student ID: 
 STU105
 Enter student name: 
-Ricky
+Ram
 Enter age: 
-12
-Invalid age. Enter a value between 16 and 30.
-Enter age: 
-20
+22
+Age accepted.
+Enter email: 
+ram@gmailcom
 
 Select Course
 1. BCA
 2. B.Sc Computer Science
 3. B.E/B. Tech
-Enter course choice: 
-7
-Invalid course choice. Enter a value from 1 to 3
+4. MCA
+5. Other
 Enter course choice: 
 1
 Course selected: BCA
+Enter semester (1-8): 
+4
+Enter career goal: 
+Become an Analyst
 Enter Java marks: 
-110
-Invalid marks. Enter a value between 0 and 100
-Enter Java marks: 
-75
+70
 Enter SQL marks: 
-80
+70
+Enter Web Technology marks: 
+70
 Enter Aptitude marks: 
-75
-Enter attendance percentage: 
--10
-Invalid Attendance, reenter the attendance%
-Enter attendance percentage: 
-80
+70
+Enter Communication marks: 
+70
+Enter total classes conducted: 
+100
+Enter classes attended: 
+70
+How many assignment scores do you want to enter (1-10): 
+5
+Enter score for assignment 1 (0-10, -1 to finish): 
+8
+Assignment score accepted.
+Enter score for assignment 2 (0-10, -1 to finish): 
+15
+Invalid score. Assignment 2 skipped.
+Enter score for assignment 3 (0-10, -1 to finish): 
+6
+Assignment score accepted.
+Enter score for assignment 4 (0-10, -1 to finish): 
+-1
+Assignment entry completed early.
+Final payable fee: 35000.00
 Enter fee paid: 
-29950
+30000
 
-==================================================
-              STUDENT SEMESTER REPORT             
-==================================================
-Student ID          : STU105
-Student Name        : Ricky
-Age                 : 20
-Course              : BCA
---------------- ACADEMIC DETAILS -----------------
-Java Marks          : 75
-SQL Marks           : 80
-Aptitude Marks      : 75
-Total Marks         : 230/ 300
-Average             : 76.67
-Academic Result     : PASSED
-Grade               : A
---------------- ATTENDANCE DETAILS ---------------
-Attendance          : 80.00%
-Attendance Status   : SUFFICIENT
------------------- FEE DETAILS --------------------
-Semester Fee        : 30000.0
-Fee paid            : 29950.0
-Fee Balance         : 50.0
-Fee Status          : PENDING
----------------- FINAL STATUS ---------------------
-Semester Status     : SEMESTER NOT CLEARED
+========================================================
+                 STUDENT SEMESTER REPORT
+========================================================
+Student ID                 : STU105
+Student Name               : Ram
+Age                        : 22
+Email                      : ram@gmailcom
+Course                     : BCA
+Semester                   : 4
+Career Goal                : Become an Analyst
 
-Reasons:
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 70
+SQL Marks                  : 70
+Web Technology Marks       : 70
+Aptitude Marks             : 70
+Communication Marks        : 70
+Total Marks                : 350/500
+Percentage                 : 70.00%
+Academic Result            : PASSED
+Grade                      : B
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 100
+Classes Attended           : 70
+Attendance Percentage      : 70.00%
+Attendance Status          : SHORTAGE
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 2
+Assignment Total           : 14
+Assignment Average         : 7.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 35000.00
+Scholarship Percentage     : 0%
+Scholarship Amount         : 0.00
+Final Payable Fee          : 35000.00
+Fee Paid                   : 30000.00
+Fee Balance                : 5000.00
+Fee Status                 : PENDING
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
+- Attendance is below 75%.
 - Semester fee is pending.
+
+---------------- RECOMMENDATIONS ---------------------
+- Attend classes regularly and clear the attendance shortage.
+- Pay the pending semester fee before clearance.
+========================================================
+

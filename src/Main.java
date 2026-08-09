@@ -11,14 +11,12 @@ public class Main {
 
         do {
 
-            
             System.out.println("========================================================");
             System.out.println("                    CAMPUSTRACK");
             System.out.println("========================================================");
             System.out.println("       Student Academic Management System");
             System.out.println("--------------------------------------------------------");
 
-        
             System.out.print("Enter student ID: ");
             String studentId = sc.next();
 
@@ -98,10 +96,6 @@ public class Main {
             }
 
             System.out.println("Course selected: " + courseName);
-
-            // ==================================================
-            // SEMESTER
-            // ==================================================
             System.out.print("Enter semester (1-8): ");
             int no_of_sem = sc.nextInt();
 
@@ -115,17 +109,11 @@ public class Main {
                 no_of_sem = sc.nextInt();
             }
 
-            // ==================================================
-            // CAREER GOAL
-            // ==================================================
             sc.nextLine();
 
             System.out.print("Enter career goal: ");
             String careerGoal = sc.nextLine();
 
-            // ==================================================
-            // JAVA MARKS
-            // ==================================================
             System.out.print("Enter Java marks: ");
             int javaMarks = sc.nextInt();
 
@@ -139,9 +127,6 @@ public class Main {
                 javaMarks = sc.nextInt();
             }
 
-            // ==================================================
-            // SQL MARKS
-            // ==================================================
             System.out.print("Enter SQL marks: ");
             int sqlMarks = sc.nextInt();
 
@@ -154,10 +139,6 @@ public class Main {
                 System.out.print("Enter SQL marks: ");
                 sqlMarks = sc.nextInt();
             }
-
-            // ==================================================
-            // WEB TECHNOLOGY MARKS
-            // ==================================================
             System.out.print("Enter Web Technology marks: ");
             int webMarks = sc.nextInt();
 
@@ -171,9 +152,6 @@ public class Main {
                 webMarks = sc.nextInt();
             }
 
-            // ==================================================
-            // APTITUDE MARKS
-            // ==================================================
             System.out.print("Enter Aptitude marks: ");
             int aptitudeMarks = sc.nextInt();
 
@@ -295,14 +273,12 @@ public class Main {
                     break;
                 }
 
-                // Invalid score
                 if (assignmentScore < 0 || assignmentScore > 10) {
 
                     System.out.println("Invalid score. Assignment " + i + " skipped.");
                     continue;
                 }
 
-                // Valid score
                 assignmentTotal = assignmentTotal + assignmentScore;
 
                 validAssignmentCount++;
