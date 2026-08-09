@@ -1,0 +1,59 @@
+==================================================
+			        CAMPUSTRACK		              
+==================================================
+	Simple Student Result Management System	      
+--------------------------------------------------
+Enter student ID: 
+STU104
+Enter student name: 
+Teena
+Enter age: 
+21
+
+Select Course
+1. BCA
+2. B.Sc Computer Science
+3. B.E/B. Tech
+Enter course choice: 
+1
+Course selected: BCA
+Enter Java marks: 
+70
+Enter SQL marks: 
+68
+Enter Aptitude marks: 
+72
+Enter attendance percentage: 
+70
+Enter fee paid: 
+20000
+
+==================================================
+              STUDENT SEMESTER REPORT             
+==================================================
+Student ID          : STU104
+Student Name        : Teena
+Age                 : 21
+Course              : BCA
+--------------- ACADEMIC DETAILS -----------------
+Java Marks          : 70
+SQL Marks           : 68
+Aptitude Marks      : 72
+Total Marks         : 210/ 300
+Average             : 70.00
+Academic Result     : PASSED
+Grade               : B
+--------------- ATTENDANCE DETAILS ---------------
+Attendance          : 70.00%
+Attendance Status   : SHORTAGE
+------------------ FEE DETAILS --------------------
+Semester Fee        : 30000.0
+Fee paid            : 20000.0
+Fee Balance         : 10000.0
+Fee Status          : PENDING
+---------------- FINAL STATUS ---------------------
+Semester Status     : SEMESTER NOT CLEARED
+
+Reasons:
+- Attendance is below 75%.
+- Semester fee is pending.
