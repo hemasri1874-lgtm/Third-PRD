@@ -1,59 +1,114 @@
-==================================================
-			        CAMPUSTRACK		              
-==================================================
-	Simple Student Result Management System	      
---------------------------------------------------
+========================================================
+                    CAMPUSTRACK
+========================================================
+       Student Academic Management System
+--------------------------------------------------------
 Enter student ID: 
 STU102
 Enter student name: 
 Ravi
 Enter age: 
 20
+Age accepted.
+Enter email: 
+ravi@gmail.com
 
 Select Course
 1. BCA
 2. B.Sc Computer Science
 3. B.E/B. Tech
+4. MCA
+5. Other
 Enter course choice: 
-1
-Course selected: BCA
+2
+Course selected: B.Sc Computer Science
+Enter semester (1-8): 
+4
+Enter career goal: 
+Become a Python developer
 Enter Java marks: 
 90
 Enter SQL marks: 
-30
-Enter Aptitude marks: 
 90
-Enter attendance percentage: 
-85
+Enter Web Technology marks: 
+90
+Enter Aptitude marks: 
+30
+Enter Communication marks: 
+90
+Enter total classes conducted: 
+120
+Enter classes attended: 
+90
+How many assignment scores do you want to enter (1-10): 
+4
+Enter score for assignment 1 (0-10, -1 to finish): 
+9
+Assignment score accepted.
+Enter score for assignment 2 (0-10, -1 to finish): 
+8
+Assignment score accepted.
+Enter score for assignment 3 (0-10, -1 to finish): 
+7
+Assignment score accepted.
+Enter score for assignment 4 (0-10, -1 to finish): 
+8
+Assignment score accepted.
+Final payable fee: 30000.00
 Enter fee paid: 
-0
+6
 
-==================================================
-              STUDENT SEMESTER REPORT             
-==================================================
-Student ID          : STU102
-Student Name        : Ravi
-Age                 : 20
-Course              : BCA
---------------- ACADEMIC DETAILS -----------------
-Java Marks          : 90
-SQL Marks           : 30
-Aptitude Marks      : 90
-Total Marks         : 210/ 300
-Average             : 70.00
-Academic Result     : FAILED
-Grade               : F
---------------- ATTENDANCE DETAILS ---------------
-Attendance          : 85.00%
-Attendance Status   : SUFFICIENT
------------------- FEE DETAILS --------------------
-Semester Fee        : 30000.0
-Fee paid            : 0.0
-Fee Balance         : 30000.0
-Fee Status          : PENDING
----------------- FINAL STATUS ---------------------
-Semester Status     : SEMESTER NOT CLEARED
+========================================================
+                 STUDENT SEMESTER REPORT
+========================================================
+Student ID                 : STU102
+Student Name               : Ravi
+Age                        : 20
+Email                      : ravi@gmail.com
+Course                     : B.Sc Computer Science
+Semester                   : 4
+Career Goal                : Become a Python developer
 
-Reasons:
-- SQL marks are below 35.
-==================================================
+---------------- ACADEMIC SUMMARY --------------------
+Java Marks                 : 90
+SQL Marks                  : 90
+Web Technology Marks       : 90
+Aptitude Marks             : 30
+Communication Marks        : 90
+Total Marks                : 390/500
+Percentage                 : 78.00%
+Academic Result            : FAILED
+Grade                      : F
+
+---------------- ATTENDANCE SUMMARY ------------------
+Classes Conducted          : 120
+Classes Attended           : 90
+Attendance Percentage      : 75.00%
+Attendance Status          : REGULAR
+
+---------------- ASSIGNMENT SUMMARY ------------------
+Valid Assignments          : 4
+Assignment Total           : 32
+Assignment Average         : 8.00
+Assignment Status          : SATISFACTORY
+
+---------------- FEE SUMMARY -------------------------
+Base Semester Fee          : 30000.00
+Scholarship Percentage     : 0%
+Scholarship Amount         : 0.00
+Final Payable Fee          : 30000.00
+Fee Paid                   : 6.00
+Fee Balance                : 29994.00
+Fee Status                 : PENDING
+
+---------------- FINAL STATUS ------------------------
+Semester Clearance         : ACTION REQUIRED
+
+---------------- FAILED CONDITIONS -------------------
+- Aptitude marks are below 35.
+- Semester fee is pending.
+
+---------------- RECOMMENDATIONS ---------------------
+- Revisit the failed subject and complete additional practice.
+- Pay the pending semester fee before clearance.
+========================================================
